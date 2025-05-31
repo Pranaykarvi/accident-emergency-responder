@@ -96,7 +96,7 @@ def logout():
     if st.sidebar.button("Logout"):
         st.session_state.pop("user", None)
         st.session_state.pop("auth_method", None)
-        st.experimental_rerun()
+        st.rerun()
 
 def is_logged_in():
     return "user" in st.session_state
