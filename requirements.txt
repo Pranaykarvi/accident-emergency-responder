@@ -11,3 +11,4 @@ firebase-admin==6.5.0
 pyrebase4==4.8.0  # Latest compatible version
 ultralytics
 twilio
+python-dotenv
