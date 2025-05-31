@@ -10,7 +10,7 @@ class AccidentDetector:
         """
         if model_path is None:
             # NOTE: Make sure this path matches where your best.pt actually lives.
-            model_path = r"D:\target\AI-AGENTS\accident_detection_ai\experiments\experiments\runs\accident_yolov8n2\weights\best.pt"
+            model_path = "experiments/accident_yolov8n2/weights/best.pt"
         self.model = YOLO(model_path)
 
     def detect_on_image(self, image_path, conf=0.3, save=False, save_dir="outputs"):
